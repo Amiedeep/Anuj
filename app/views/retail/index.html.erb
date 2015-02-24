@@ -1,0 +1,33 @@
+
+<a href="products"><%= submit_tag 'Products' %></a>
+<a href="/products/new"><%= submit_tag 'Add new products' %></a>
+<a href="/index"><%= submit_tag 'Cart' %></a>
+
+</br>
+</br>
+
+
+
+
+
+<%= form_tag("/search", method: "get") do %>
+<div id="text_field"><%= text_field_tag :q%></div>
+<%= submit_tag 'Search' %>
+<% end %>
+
+
+<div id=product_image class="images">
+
+
+	
+
+ <h1><%= link_to 'Shoes',product_path('shoes')  %>	</h1>
+ <%= image_tag "shoes.jpg", :size => "500x300" %> 
+
+ <h1><%= link_to 'Drinks',product_path('Drink') %>	</h1>
+ <%= image_tag "drinks.jpg", :size => "500x300" %> 
+
+ <h1><%= link_to 'Headphones',product_path('headphones') %>	</h1>
+ <%= image_tag "headphones.png", :size => "500x300" %> 
+</div>
+

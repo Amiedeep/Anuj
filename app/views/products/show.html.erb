@@ -1,0 +1,9 @@
+<a href="/"><%= submit_tag 'Back to Home' %></a>
+  
+    <% @result.each do |f| %>
+        <h3> Type of product is: <%= f.type_of_product %></h3>
+        <p>Company of product: <%= f.company %></p>
+        <p>Name of Product: <%= f.name %></p>
+        <p>Price of product: <%= f.price %>  </p>
+    <h3><%= link_to "Add to cart", add_product_path(id: f.id,name: f.name) %> </h3>
+    <% end %>

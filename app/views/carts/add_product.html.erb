@@ -1,0 +1,10 @@
+<a href="/"><%= submit_tag 'Back to Home' %></a>
+<p><%= @abc.nil? %></p>
+<% @record.each do |f| %>
+
+
+    <h3>Name of Product: <%= f.name %></h3>
+    <p>Quantity of product: <%= f.quantity  %>  </p>
+
+
+<% end %>

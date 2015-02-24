@@ -1,0 +1,16 @@
+<a href="/"><%= submit_tag 'Back to Home' %></a>
+<h1>Items in your cart are : </h1>
+
+<% if @result.size==0 %>
+     <h3 style="color: red">no items in your cart </h3>
+<% end %>
+
+
+<% @result.each do |f| %>
+
+
+    <h3>Name of Product: <%= f.name %></h3>
+    <p>Quantity of product: <%= f.quantity %>  </p>
+    <%= link_to "Delete", delete_product_path(id: f.id), confirm: "Are you sure? Do you really want to delete it?" %>
+
+<% end %>
