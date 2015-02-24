@@ -7,7 +7,7 @@ class Product < ActiveRecord::Base
                   #"%#{query}%", "%#{query.downcase}%", "%#{query}%", "%#{query.downcase}%", )
 
           where(['type_of_product LIKE ? OR name LIKE ?',
-                  "%#{query.downcase}%", "%#{query.downcase}%"])
+                  "%#{query}%", "%#{query}%"])
         end
   end
 
