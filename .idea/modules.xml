@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/anuj.iml" filepath="$PROJECT_DIR$/.idea/anuj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../openlibrary/.idea/openlibrary.iml" filepath="$PROJECT_DIR$/../openlibrary/.idea/openlibrary.iml" />
       <module fileurl="file://$USER_HOME$/Downloads/pullbullet/.idea/pullbullet.iml" filepath="$USER_HOME$/Downloads/pullbullet/.idea/pullbullet.iml" />
-      <module fileurl="file://$USER_HOME$/spree/.idea/spree.iml" filepath="$USER_HOME$/spree/.idea/spree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spree/.idea/spree.iml" filepath="$PROJECT_DIR$/../spree/.idea/spree.iml" />
     </modules>
   </component>
 </project>

@@ -1,16 +1,16 @@
-<a href="/"><%= submit_tag 'Back to Home' %></a>
+<a href="/"><%= submit_tag 'Back to Home' %></a><br/> <br/>
 <%=  form_for @result do |f| %>
 
-    <%=  f.label :type     %>: <br/>
+   * <%=  f.label :type     %>: <br/>
     <%= f.text_field :type_of_product %><br /><br/>
 
-    <%= f.label :Name    %>: <br/>
+   * <%= f.label :Name    %>: <br/>
     <%= f.text_field :name %><br /><br/>
 
     <%= f.label :Company %>: <br/>
     <%= f.text_field :company %><br /><br/>
 
-    <%= f.label :Price   %>: <br/>
+   * <%= f.label :Price   %>: <br/>
     <%= f.text_field :price %><br /><br/>
     <% #f.file_field :picture %>
 

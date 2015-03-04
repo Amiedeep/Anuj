@@ -1,4 +1,8 @@
 class ProductsController < ApplicationController
+
+
+
+
 	def index
 		@product=Product.all
   end
@@ -26,7 +30,8 @@ class ProductsController < ApplicationController
     if @result.save
       redirect_to products_path
     else
-      redender 'new'
+     # render 'new'
+      redirect_to new_product_path
     end
   end
 
