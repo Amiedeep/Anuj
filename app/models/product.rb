@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
 
+  validates :name, :type_of_product, :price,presence: true
 	def self.search(query)
         if query
             #TODO: Return error for empty queries
