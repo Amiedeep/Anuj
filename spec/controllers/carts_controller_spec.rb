@@ -3,11 +3,14 @@ require 'rails_helper'
 RSpec.describe CartsController, type: :controller do
   describe "#index" do
     it "should return all products in cart" do
+      get :index
+
 
     end
   end
   before :each do
 
+    @new = Cart.new(name: "pepsi",quantity:1)
     @total=Cart.count
 
 
@@ -24,13 +27,23 @@ RSpec.describe CartsController, type: :controller do
 
       #specify { response.should redirect_to(index_path) }
 
-      @ab=Cart.new(name: @name,quantity:1).save
+      #new_product=Cart.new(name: @name,quantity:1)
+      expect { @new.save }.to change { Cart.count }.by(1)
       #get :add_product/ab
-      Cart.count.should==@total+1
-      expect(response).to redirect_to :action => "index"
+      #Cart.count.should==@total+1
+      #expect(response).to render_template("index")
+      expect(response.status).to eql(200)
       #current_path.should==index_path
       #response.should redirect_to :action => "index"
 
     end
   end
+
+  describe '#destroy' do
+    it 'should destroy product from the cart' do
+      @new.save
+      expect {@new.destroy}.to change { Cart.count }.by(-1)
+    end
+  end
+
 end

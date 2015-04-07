@@ -31,7 +31,11 @@ class ProductsController < ApplicationController
       redirect_to products_path
     else
      # render 'new'
-      redirect_to new_product_path
+      #flash[:notice] = "invalid params" still don't know the meaning.
+      render json: @result.errors
+      #render json: @result.errors.messages same as above.
+
+      #redirect_to new_product_path
     end
   end
 

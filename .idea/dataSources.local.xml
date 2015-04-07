@@ -3,14 +3,8 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails anuj: development" uuid="8e8f54e8-0eda-4b93-ac26-eaff0f1e2c5a" />
     <data-source name="Rails anuj: test" uuid="aa348894-5ed4-4d7f-9af8-de089243ced8" />
-    <data-source name="Rails pullbullet: development" uuid="f1b53d8f-430d-491e-b862-a19561d54fbf">
-      <user-name>pullbullet</user-name>
-    </data-source>
-    <data-source name="Rails pullbullet: test" uuid="e23d3e7d-672c-40c7-86d8-e0356187ce53">
-      <user-name>pullbullet</user-name>
-    </data-source>
-    <data-source name="Rails pullbullet: production" uuid="bb36888b-7d7d-4240-bf57-309949678417">
-      <user-name>user</user-name>
-    </data-source>
+    <data-source name="Rails pullbullet: development" uuid="f1b53d8f-430d-491e-b862-a19561d54fbf" />
+    <data-source name="Rails pullbullet: test" uuid="e23d3e7d-672c-40c7-86d8-e0356187ce53" />
+    <data-source name="Rails pullbullet: production" uuid="bb36888b-7d7d-4240-bf57-309949678417" />
   </component>
 </project>

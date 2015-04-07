@@ -33,6 +33,7 @@ gem 'factory_girl'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'rest-client'
 
 gem 'rails_12factor', group: :production
 group :test do

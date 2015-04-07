@@ -6,6 +6,10 @@
     <mapping directory="$PROJECT_DIR$/../spree" vcs="Git" />
     <mapping directory="$USER_HOME$/Downloads/pullbullet" vcs="Git" />
     <mapping directory="$USER_HOME$/Downloads/pullbullet" vcs="Git" />
+    <mapping directory="$USER_HOME$/sportech/errbit" vcs="Git" />
+    <mapping directory="$USER_HOME$/sportech/longitudepools" vcs="Git" />
+    <mapping directory="$USER_HOME$/sportech/nyx_account_client" vcs="Git" />
+    <mapping directory="$USER_HOME$/sportech/playthepools" vcs="Git" />
     <mapping directory="$USER_HOME$/spree" vcs="Git" />
   </component>
 </project>
