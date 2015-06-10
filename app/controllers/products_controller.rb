@@ -10,7 +10,6 @@ class ProductsController < ApplicationController
 
 	def show
 		query = params[:id]
-
     @result=Product.search(query)
   end
 
@@ -23,6 +22,11 @@ class ProductsController < ApplicationController
     @product=Product.find(params[:id])
     @product.destroy
     redirect_to products_path
+  end
+
+  def api
+    @products = Product.all
+    render json: @products
   end
 
   def create

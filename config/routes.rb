@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'destroy/:id' => 'carts#destroy',as: :delete_product
 
   get 'search' => 'products#search'
+  get '/api' => 'products#api'
   #get 'url or /path' => redirect('action') or we can redirect to other url's or websites
   #get 'add_product/:id' => 'carts#add_product'
   #get 'add' => 'carts#add'
